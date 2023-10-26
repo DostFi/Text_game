@@ -1,1 +1,1 @@
-# Text_game
+# hra_Dostal.py
