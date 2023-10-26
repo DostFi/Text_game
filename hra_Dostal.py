@@ -4,8 +4,7 @@ import random
 def uvod():
     print("Vítej v textové hře 'Útěk ze školy'!")
     print("Nacházíš se ve třídě a tvůj úkol je ze školy utéct a při nejlpepším se vyhnout všem učitelům.")
-    print("Při průchodu hrou se budeš muset rozhodovat a tvoje rozhodnutí budou mít dopad na to jak hra skončí")
-    print("Buď opatrný a správně vybírej, abys se ze školy dostal v bezpečí a bez trestu.")
+    print("Dávej pozor, protože škola skrývá spoustu nebezpečí.")
 
 def konec():
     print("Děkuji za hraní hry 'Útěk ze školy'!")
@@ -102,3 +101,4 @@ def kliky():
         print("Po klicích jsi trochu unavený, ale pořád se zvládneš zvednout a teď už v klidu odejít ze školy.")
         konec()
 
+zacatek_hry()
