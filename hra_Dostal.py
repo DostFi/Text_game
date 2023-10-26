@@ -85,7 +85,7 @@ def východ():
     print("U východu ale potkáš další a teď snad už poslední nemilou návštěvu.")
     print("Před tebou se objeví obávaný pan učitel Šmehlík.")
     print("Ten chce po tobě aby jsi udělal 10 kliků.")
-    volba = input("Uděláš těch 10 kliků (kliky), nebo se radši pokusíš utýct (útěk)?")
+    volba = input("Uděláš těch 10 kliků (kliky), nebo se radši pokusíš utýct (útěk)?").lower
     if "kliky" in volba:
         kliky()
     if "útěk" in volba:
