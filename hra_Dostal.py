@@ -44,10 +44,11 @@ def chodba():
         slohovka()
     if "útěk" in volba:
         cislo = random.randint(1,2)
-        if 1 in cislo:
+        str_cislo = str(cislo)
+        if '1' in str_cislo:
             print("Podařilo se ti před paní učitelkou utýct a jdeš tedy k šatnám.")
             šatny()
-        if 2 in cislo:
+        if '2' in str_cislo:
             print("Bohužel se ti před paní učitelkou nepodařilo utýct a chytila tě.")
             slohovka()
     else:
