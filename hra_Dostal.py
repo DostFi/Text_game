@@ -42,13 +42,13 @@ def chodba():
     volba = input("Půjdeš si napsat slohovku (napsat slohovku), nebo se jí pokusíš utýct (útěk)?").lower()
     if "napsat slohovku" in volba:
         slohovka()
-    if "útěk" in volba:
+    elif "útěk" in volba:
         cislo = random.randint(1,2)
         str_cislo = str(cislo)
         if '1' in str_cislo:
             print("Podařilo se ti před paní učitelkou utýct a jdeš tedy k šatnám.")
             šatny()
-        if '2' in str_cislo:
+        elif '2' in str_cislo:
             print("Bohužel se ti před paní učitelkou nepodařilo utýct a chytila tě.")
             slohovka()
     else:
@@ -73,7 +73,7 @@ def šatny():
     if "sundat boty" in volba:
         print("Sundal sis boty a jdeš naboso až k východu ze školy.")
         východ()
-    if "uklidit" in volba:
+    elif "uklidit" in volba:
         print("Pan školník ti dá lopatku a koště a ty si musíš uklidit všechno co ti z bot spadalo a možná i to co spadalo spolužákům.")
         print("Když to douklízíš, pan školník tě nechá jít.")
         východ()
@@ -85,17 +85,20 @@ def východ():
     print("U východu ale potkáš další a teď snad už poslední nemilou návštěvu.")
     print("Před tebou se objeví obávaný pan učitel Šmehlík.")
     print("Ten chce po tobě aby jsi udělal 10 kliků.")
-    volba = input("Uděláš těch 10 kliků (kliky), nebo se radši pokusíš utýct (útěk)?").lower
+    volba = input("Uděláš těch 10 kliků (kliky), nebo se radši pokusíš utýct (útěk)?").lower()
     if "kliky" in volba:
         kliky()
-    if "útěk" in volba:
-        cislo = random.randint(1,2)
-        if 1 in cislo:
+    elif "útěk" in volba:
+        cislo = random.randint(1, 2)
+        str_cislo = str(cislo)
+        if '1' in str_cislo:
             print("Podařilo se ti před Šmehlíkem utýct a tím pádem jsi unikl ze školy.")
             konec()
-        if 2 in cislo:
+        elif '2' in str_cislo:
             print("Nepodařilo se ti před Šmehlíkem utýct, a ty kliky si tím pádem budeš muset udělat.")
             kliky()
+    else:
+        print("Nerozumím tvému příkazu, zkuste to znovu.")
 
 def kliky():
         print("Ty si teda přemůžeš a hezky to před ním odklikuješ.")
